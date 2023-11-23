@@ -6,7 +6,7 @@
 /*   By: mfaria-b <mfaria-b@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 09:25:46 by mfaria-b          #+#    #+#             */
-/*   Updated: 2023/11/21 20:34:47 by mfaria-b         ###   ########.fr       */
+/*   Updated: 2023/11/23 00:42:55 by mfaria-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ char	*get_next_line(int fd)
 	file = read_file(file, fd);
 	if (!file)
 		return (NULL);
-	line = cut_line(file);
+	line = cut_file(file);
 	file = rest_file(file);
 	return (line);
 }
